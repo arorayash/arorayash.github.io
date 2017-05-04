@@ -13,31 +13,10 @@ body {
     color: #fff;
 }
 
-.featured::-moz-selection {
-    background: Transparent;
-}
-
 a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-}
-
-.titles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    z-index: 1;
-}
-
-.title {
-    position: fixed;
-    display: inline-block;
-    white-space: nowrap;
 }
 
 .img-counter {
@@ -51,47 +30,10 @@ a {
 }
 
 .logo-wrapper {
-
-}
-
-#label1 {
-    left: 15%;
-    top: 37%;
-    vertical-align: text-top;
-}
-
-#label2 {
-    left: 115%;
-    top: 37%;
-    vertical-align: text-top;
-}
-
-#label3 {
-    left: 215%;
-    top: 37%;
-    vertical-align: text-top;
-}
-
-.black-line {
-    position: fixed;
-    left: 45%;
-    top: 35%;
-    height: 10px;
-    width: 156px;
-    background-color: #060606;
-}
-
-.line1 {
-    font-family: 'Helvetica', Helvetica;
-    font-size: 4em;
-    color: #060606;
-    font-weight: 600;
-    display: inline-block;
-    padding-top: 15%;
-}
-
-.line1 p {
-    display: inline;
+    margin: 0 auto;
+    display: table;
+    position: relative;
+    top: calc( 50vh - 240px);
 }
 
 .navbar-nav {
@@ -100,10 +42,11 @@ a {
     font-family: "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono, monospace;
     letter-spacing: 0.1em;
 }
+
 .navbar-nav > li {
     float: none;
     display: inline-block;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
@@ -113,9 +56,7 @@ a {
     z-index: 565656;
     padding: 2em;
     margin: 0 auto;
-
     display: inline-block;
-
 }
 
 .navbar-nav li a {
@@ -167,59 +108,19 @@ header {
     height: 120px;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
 
 @media (max-width: 600px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    .line1 {
-        font-size: 30px;
-        padding-top: 50%;
-        margin-left: -8%;
-    }
-
-    .ya_logo {
-        padding-top: 40px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-
-    .black-line {
-        margin-top: 60%;
-
-    }
-
     .social_links_div {
-        font-size: 0.5em;
+        font-size: 0.7em;
+    }
+
+    .social-links {
+        margin: 1em;
+    }
+
+    .navbar-nav li a {
+        margin: 0;
     }
 }
 
-.main {
-    position: fixed;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-}
-
-@media screen and (min-width: 1500px) {
-    .line1 {
-        padding-top: 40%;
-    }
-}
 
