@@ -38,8 +38,8 @@ a {
     to {filter: blur(0)}
 }
 
-.ya_logo-img:hover{
-
+img#logo-img {
+    transition: transform 0.4s ease;
 }
 
 .navbar-nav {
@@ -126,6 +126,10 @@ header {
 
     .navbar-nav li a {
         margin: 0;
+    }
+
+    img#logo-img {
+        transform: scale(0.6);
     }
 }
 
