@@ -19,21 +19,27 @@ a {
     cursor: pointer;
 }
 
-.img-counter {
-    position: fixed;
-    top: 70%;
-    left: 79%;
-    font-family: 'Helvetica', Helvetica;
-    font-size: 1em;
-    color: #060606;
-    font-weight: 600;
-}
-
 .logo-wrapper {
     margin: 0 auto;
     display: table;
     position: relative;
     top: calc( 50vh - 240px);
+}
+
+.ya_logo-img{
+    transition: all 0.8s ease-in;
+    animation: blur 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes blur {
+    from {filter: blur(130px)}
+    to {filter: blur(0)}
+}
+
+.ya_logo-img:hover{
+
 }
 
 .navbar-nav {
@@ -104,7 +110,7 @@ a {
 }
 
 header {
-    font-family: "Helvetica-Neue-Bold", "Helvetica Neue Bold", "HelveticaNeueBold", Helvetica-Neue, HelveticaNeue, "Helvetica", Helvetica, "Arial", Arial, sans-serif;
+    font-family: "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono, monospace;
     height: 120px;
 }
 
